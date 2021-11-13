@@ -1,0 +1,7 @@
+C:\Users\Filip\git\C3L---Programming-1\UPG5\bin\Debug\UPG5.exe.config
+C:\Users\Filip\git\C3L---Programming-1\UPG5\bin\Debug\UPG5.exe
+C:\Users\Filip\git\C3L---Programming-1\UPG5\bin\Debug\UPG5.pdb
+C:\Users\Filip\git\C3L---Programming-1\UPG5\obj\Debug\UPG5.csproj.AssemblyReference.cache
+C:\Users\Filip\git\C3L---Programming-1\UPG5\obj\Debug\UPG5.csproj.CoreCompileInputs.cache
+C:\Users\Filip\git\C3L---Programming-1\UPG5\obj\Debug\UPG5.exe
+C:\Users\Filip\git\C3L---Programming-1\UPG5\obj\Debug\UPG5.pdb
