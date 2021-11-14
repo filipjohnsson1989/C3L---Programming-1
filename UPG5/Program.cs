@@ -10,21 +10,11 @@ namespace UPG5
     {
         static void Main(string[] args)
         {
-            string namn;
-            int alder;
-            float langd, vikt;
+            Input input = new Input();
+            input.GetData();
 
-            Console.WriteLine("Hej! Vad heter du?");
-            namn = Console.ReadLine();
-            Console.WriteLine("Hur gammal är du?");
-            Int32.TryParse(Console.ReadLine(), out alder);
-            Console.WriteLine("Hur lång är du i cm?");
-            langd = float.Parse(Console.ReadLine());
-            Console.WriteLine("Hur mycket väger du i kg?");
-            vikt = float.Parse(Console.ReadLine());
-
-            Person person = new Person(namn, alder);
-            Calculation calculation = new Calculation(langd, vikt);
+            Person person = new Person(input.Namn, input.Alder);
+            Calculation calculation = new Calculation(input.Langd, input.Vikt);
 
             Console.WriteLine(person.PersonInfo() + ", " + calculation.CalculationInfo());
             Console.WriteLine("Tryck något att avsluta!");
