@@ -12,7 +12,7 @@ namespace UPG5
         {
             string namn;
             int alder;
-            float langd, langdIM, vikt, bmi;
+            float langd, vikt;
 
             Console.WriteLine("Hej! Vad heter du?");
             namn = Console.ReadLine();
@@ -23,13 +23,10 @@ namespace UPG5
             Console.WriteLine("Hur mycket väger du i kg?");
             vikt = float.Parse(Console.ReadLine());
 
-            langdIM = (langd / 100);
-            bmi = vikt / (langdIM * langdIM);
-            Console.WriteLine(namn +
-                ", du är " + alder +
-                "år, " + $"{langdIM:0.##}" + "m" + " lång " +
-                "och väger " + vikt + "kg. " +
-                "Din beräknade BMI är " + $"{bmi:0.#}" + ".");
+            Person person = new Person(namn, alder);
+            Calculation calculation = new Calculation(langd, vikt);
+
+            Console.WriteLine(person.PersonInfo() + ", " + calculation.CalculationInfo());
             Console.WriteLine("Tryck något att avsluta!");
             Console.ReadLine();
         }
