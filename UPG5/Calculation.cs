@@ -23,7 +23,7 @@ namespace UPG5
         {
             return $"{_langdIM:0.##}" + "m" + " lång " +
                 "och väger " + _vikt + "kg. " +
-                "Din beräknade BMI är " + $"{_bmi:0.#}" + ".";
+                "Personens beräknade BMI är " + $"{_bmi:0.#}" + ".";
         }
 
 

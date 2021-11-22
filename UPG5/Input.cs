@@ -19,13 +19,13 @@ namespace UPG5
 
         public void GetData()
         {
-            Console.WriteLine("Hej! Vad heter du?");
+            Console.WriteLine("Vad heter personen?");
             _namn = Console.ReadLine();
-            Console.WriteLine("Hur gammal är du?");
+            Console.WriteLine("Hur gammal är personen?");
             Int32.TryParse(Console.ReadLine(), out _alder);
-            Console.WriteLine("Hur lång är du i cm?");
+            Console.WriteLine("Hur lång är personen i cm?");
             _langd = float.Parse(Console.ReadLine());
-            Console.WriteLine("Hur mycket väger du i kg?");
+            Console.WriteLine("Hur mycket väger personen i kg?");
             _vikt = float.Parse(Console.ReadLine());
         }
     }

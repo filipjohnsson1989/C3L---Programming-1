@@ -25,8 +25,8 @@ namespace UPG5
 
         public string PersonInfo()
         {
-            return "Hej " + _namn +
-                ", du är " + _alder + "år";
+            return "Personen " + _namn +
+                ", personen är " + _alder + "år";
         }
     }
 }
