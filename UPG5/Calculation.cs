@@ -9,10 +9,7 @@ namespace UPG5
     class Calculation
     {
         private float _langd, _vikt, _langdIM, _bmi;
-
-        public float LangdIM { get { return _langdIM; } }
-        public float BMI { get { return _bmi; } }
-
+        
         public Calculation(float lengd, float vikt)
         {
             _langd = lengd;
