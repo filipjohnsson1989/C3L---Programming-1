@@ -10,11 +10,17 @@ namespace UPG5
     {
         private string _namn;
         private int _alder;
+        private float _langd, _vikt;
 
-        public Person(string name, int alder)
+        public float Langd { get { return _langd; } }
+        public float Vikt { get { return _vikt; } }
+
+        public Person(string name, int alder, float lengd, float vikt)
         {
             _namn = name;
             _alder = alder;
+            _langd = lengd;
+            _vikt = vikt;
         }
 
         public string PersonInfo()

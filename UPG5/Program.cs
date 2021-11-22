@@ -13,7 +13,7 @@ namespace UPG5
             Input input = new Input();
             input.GetData();
 
-            Person person = new Person(input.Namn, input.Alder);
+            Person person = new Person(input.Namn, input.Alder, input.Langd, input.Vikt);
             Calculation calculation = new Calculation(input.Langd, input.Vikt);
 
             Console.WriteLine(person.PersonInfo() + ", " + calculation.CalculationInfo());
