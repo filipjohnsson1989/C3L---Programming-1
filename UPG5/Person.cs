@@ -15,9 +15,9 @@ namespace UPG5
         public float Langd { get { return _langd; } }
         public float Vikt { get { return _vikt; } }
 
-        public Person(string name, int alder, float lengd, float vikt)
+        public Person(string namn, int alder, float lengd, float vikt)
         {
-            _namn = name;
+            _namn = namn;
             _alder = alder;
             _langd = lengd;
             _vikt = vikt;
