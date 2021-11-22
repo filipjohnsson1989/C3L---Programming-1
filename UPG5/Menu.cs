@@ -8,10 +8,10 @@ namespace UPG5
 {
     class Menu
     {
-        private List<Person> _personList;
+        private InformationManager _informationManager;
         public Menu()
         {
-            _personList = new List<Person>();
+            _informationManager = new InformationManager();
         }
         public void RunMenu()
         {
@@ -165,8 +165,7 @@ namespace UPG5
                     Input input = new Input();
                     input.GetData();
 
-                    Person person = new Person(input.Namn, input.Alder, input.Langd, input.Vikt);
-                    _personList.Add(person);
+                    _informationManager.AddNewPerson(input.Namn, input.Alder, input.Langd, input.Vikt);
 
                     //Förhindra att kontrollera av resten som är obligatorisk i Switch case satsen i synatxen.
                     break;
@@ -178,12 +177,9 @@ namespace UPG5
 
                     //Anropar av metoder att visa BMI.
                     //Att visa BMI
-                    foreach (var personIndex in _personList)
-                    {
-                        Calculation calculation = new Calculation(personIndex.Langd, personIndex.Vikt);
+                    _informationManager.InformationManagerInfo();
 
-                        Console.WriteLine(personIndex.PersonInfo() + ", " + calculation.CalculationInfo());
-                    }
+
 
                     //Förhindra att kontrollera av resten som är obligatorisk i Switch case satsen i synatxen.
                     break;

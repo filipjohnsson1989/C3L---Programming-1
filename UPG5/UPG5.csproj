@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculation.cs" />
+    <Compile Include="InformationManager.cs" />
     <Compile Include="Input.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Person.cs" />
