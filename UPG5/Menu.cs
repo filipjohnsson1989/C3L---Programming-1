@@ -8,7 +8,11 @@ namespace UPG5
 {
     class Menu
     {
-        
+        private List<Person> _personList;
+        public Menu()
+        {
+            _personList = new List<Person>();
+        }
         public void RunMenu()
         {
 
@@ -157,7 +161,12 @@ namespace UPG5
                     notification("Du har gjort Val1 att lägga till en person.", '#');
 
                     //Anropar av metoder att lägga till en person.
-                    // TODO: att lägga till en person
+                    //Att lägga till en person
+                    Input input = new Input();
+                    input.GetData();
+
+                    Person person = new Person(input.Namn, input.Alder, input.Langd, input.Vikt);
+                    _personList.Add(person);
 
                     //Förhindra att kontrollera av resten som är obligatorisk i Switch case satsen i synatxen.
                     break;
@@ -168,7 +177,13 @@ namespace UPG5
                     notification("Du har gjort Val2 att visa BMI.", '#');
 
                     //Anropar av metoder att visa BMI.
-                    // TODO: att visa BMI
+                    //Att visa BMI
+                    foreach (var personIndex in _personList)
+                    {
+                        Calculation calculation = new Calculation(personIndex.Langd, personIndex.Vikt);
+
+                        Console.WriteLine(personIndex.PersonInfo() + ", " + calculation.CalculationInfo());
+                    }
 
                     //Förhindra att kontrollera av resten som är obligatorisk i Switch case satsen i synatxen.
                     break;
