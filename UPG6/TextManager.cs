@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace UPG6
 {
-    class TextManager
+    static class TextManager
     {
+        public static string InputFormat(string input)
+        {
+            return input.Trim().ToLower();
+        }
+
+        public static string OutputFormat(string input)
+        {
+            return input.Trim().ToUpper();
+        }
     }
 }
